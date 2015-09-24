@@ -29,7 +29,7 @@
         "ODIN_A5" : "PC_2",
         "ODIN_A6" : "PF_2",
         "ODIN_A7" : "PE_0",
-        "ODIN_A8" : "PB_6",   
+        "ODIN_A8" : "PB_6",
         "ODIN_A9" : "PB_8",
         "ODIN_A10" : "PA_11",
         "ODIN_A11" : "PA_9",
@@ -60,7 +60,7 @@
         "ODIN_D4" : "PA_7",
         "ODIN_D5" : "PC_4",
         "ODIN_D6" : "PC_5",
-        "ODIN_D8" : "PA_1",
+        "ODIN_D8" : "PA_1"
       }
     }
   },
