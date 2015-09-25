@@ -24,7 +24,8 @@
   ],
   "toolchain": "CMake/toolchain.cmake",
   "config": {
-    "mbed-os": {
+    "mbed-os": {},
+    "hardware": {
       "pins" : {
         "ODIN_A5" : "PC_2",
         "ODIN_A6" : "PF_2",
