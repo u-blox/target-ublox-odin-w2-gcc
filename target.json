@@ -26,7 +26,7 @@
   "config": {
     "mbed-os": {},
     "hardware": {
-      "ext-clk" : "24000000",
+      "externalClock" : "24000000",
       "pins" : {
         "ODIN_A5" : "PC_2",
         "ODIN_A6" : "PF_2",
