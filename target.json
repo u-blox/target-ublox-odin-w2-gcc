@@ -23,7 +23,49 @@
     "lwip"
   ],
   "toolchain": "CMake/toolchain.cmake",
-  "config": {},
+  "config": {
+    "mbed-os": {},
+    "hardware": {
+      "externalClock" : "24000000",
+      "pins" : {
+        "ODIN_A5" : "PC_2",
+        "ODIN_A6" : "PF_2",
+        "ODIN_A7" : "PE_0",
+        "ODIN_A8" : "PB_6",
+        "ODIN_A9" : "PB_8",
+        "ODIN_A10" : "PA_11",
+        "ODIN_A11" : "PA_9",
+        "ODIN_A12" : "PA_12",
+        "ODIN_A13" : "PA_10",
+        "ODIN_A14" : "PD_9",
+        "ODIN_A15" : "PD_8",
+        "ODIN_A16" : "PD_11",
+        "ODIN_A17" : "PD_12",
+        "ODIN_A18" : "PA_3",
+
+        "ODIN_C5" : "PG_4",
+        "ODIN_C6" : "PE_13",
+        "ODIN_C8" : "PE_12",
+        "ODIN_C10" : "PE_14",
+        "ODIN_C11" : "PE_11",
+        "ODIN_C12" : "PE_9",
+        "ODIN_C13" : "PF_6",
+        "ODIN_C14" : "PC_1",
+        "ODIN_C15" : "PA_2",
+        "ODIN_C16" : "PF_7",
+        "ODIN_C17" : "PF_1",
+        "ODIN_C18" : "PF_0",
+
+        "ODIN_D1" : "PB_12",
+        "ODIN_D2" : "PB_13",
+        "ODIN_D3" : "PB_11",
+        "ODIN_D4" : "PA_7",
+        "ODIN_D5" : "PC_4",
+        "ODIN_D6" : "PC_5",
+        "ODIN_D8" : "PA_1"
+      }
+    }
+  },
   "scripts": {
     "debug": [
       "valinor",
