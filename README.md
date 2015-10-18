@@ -1,0 +1,2 @@
+# target-ublox-odin-w2-gcc
+ARM mbed yotta target for ODIN W2
