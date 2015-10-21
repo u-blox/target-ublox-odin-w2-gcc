@@ -62,6 +62,14 @@
         "ODIN_D6": "PC_5",
         "ODIN_D8": "PA_1"
       }
+    },
+    "reserved" : {
+      "pins" : {
+        "PA_8"  : true
+      },
+      "peripherals" : {
+        "TIM_1" : true
+      }
     }
   },
   "scripts": {
