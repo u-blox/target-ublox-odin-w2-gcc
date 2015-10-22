@@ -1,6 +1,6 @@
 {
   "name": "ublox-odin-w2-gcc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "inherits": {
     "st-stm32f439zi-gcc": "*"
   },
@@ -60,7 +60,9 @@
         "ODIN_D4": "PA_7",
         "ODIN_D5": "PC_4",
         "ODIN_D6": "PC_5",
-        "ODIN_D8": "PA_1"
+        "ODIN_D8": "PA_1",
+        "ODIN_TP8": "PA_15",
+        "ODIN_TP10": "PB_3"
       }
     },
     "reserved" : {
