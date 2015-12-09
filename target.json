@@ -64,6 +64,14 @@
         "ODIN_TP8": "PA_15",
         "ODIN_TP10": "PB_3"
       }
+    },
+    "reserved" : {
+      "pins" : {
+        "PA_8"  : true
+      },
+      "peripherals" : {
+        "TIM_1" : true
+      }
     }
   },
   "scripts": {

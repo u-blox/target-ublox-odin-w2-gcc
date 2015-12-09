@@ -12,4 +12,4 @@ set(TARGET_UBLOX_ODIN_W2_GCC_TOOLCHAIN_INCLUDED 1)
 # definitions that yotta provides based on the target.json file.
 #
 # TODO: This should live in yotta config
-add_definitions(-DHSE_VALUE=24000000 -DHSE_STARTUP_TIMEOUT=5000)
+add_definitions(-DHSE_STARTUP_TIMEOUT=5000)
