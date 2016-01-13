@@ -13,3 +13,5 @@ set(TARGET_UBLOX_ODIN_W2_GCC_TOOLCHAIN_INCLUDED 1)
 #
 # TODO: This should live in yotta config
 add_definitions(-DHSE_STARTUP_TIMEOUT=5000)
+
+set(CMAKE_EXE_LINKER_FLAGS_INIT    "${CMAKE_EXE_LINKER_FLAGS_INIT} -T\"${CMAKE_CURRENT_LIST_DIR}/../ld/odin-w2.ld\"")
