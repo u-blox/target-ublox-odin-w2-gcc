@@ -15,10 +15,40 @@
  * limitations under the License.
  */
 
+_NVDS_Size = 0x40000;  /* NVDS reserved area */
+
 SECTIONS
 {
 	.firmware /* WLAN firmware */ : 
 	{
 		KEEP(*(.firmware))
 	} > FLASH
+
+	.cb_heap_data (NOLOAD): 
+	{
+		. = ALIGN(4);
+		*(.cb_heap_data)
+		. = ALIGN(4);
+	} > RAM AT> FLASH
+
+	.cb_static_heap (NOLOAD): 
+	{
+		. = ALIGN(4);
+		*(.cb_static_heap)
+		. = ALIGN(4);
+	} > CCM AT> FLASH	
+	.cb_fast_heap (NOLOAD): 
+	{
+		. = ALIGN(4);
+		*(.cb_fast_heap)
+		. = ALIGN(4);
+	} > CCM AT> FLASH
+		
+	.nvds_data :
+	{
+		. = ALIGN(4);
+		. = . + _NVDS_Size;
+		. = ALIGN(4);
+	} > FLASH
+
 }
