@@ -18,4 +18,4 @@ add_definitions(-DCB_FEATURE_802DOT11W)
 add_definitions(-DCB_INTERFACE_SDIO)
 
 
-set(CMAKE_EXE_LINKER_FLAGS_INIT    "${CMAKE_EXE_LINKER_FLAGS_INIT} -T\"${CMAKE_CURRENT_LIST_DIR}/../ld/odin-w2.ld\"")
+set(CMAKE_EXE_LINKER_FLAGS_INIT    "--specs=nosys.specs ${CMAKE_EXE_LINKER_FLAGS_INIT} -T\"${CMAKE_CURRENT_LIST_DIR}/../ld/odin-w2.ld\"")
