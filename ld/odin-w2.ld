@@ -31,19 +31,13 @@ SECTIONS
 		. = ALIGN(4);
 	} > RAM AT> FLASH
 
-	.cb_static_heap (NOLOAD): 
-	{
-		. = ALIGN(4);
-		*(.cb_static_heap)
-		. = ALIGN(4);
-	} > CCM AT> FLASH	
 	.cb_fast_heap (NOLOAD): 
 	{
 		. = ALIGN(4);
 		*(.cb_fast_heap)
 		. = ALIGN(4);
 	} > CCM AT> FLASH
-		
+
 	.nvds_data :
 	{
 		. = ALIGN(4);
